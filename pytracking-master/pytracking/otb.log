@@ -1,0 +1,217 @@
+Evaluating    1 trackers on   100 sequences
+Tracker: atom default 0 ,  Sequence: Basketball
+Using /home/user-njf87/.cache/torch_extensions as PyTorch extensions root...
+Detected CUDA files, patching ldflags
+Emitting ninja build file /home/user-njf87/.cache/torch_extensions/_prroi_pooling/build.ninja...
+Building extension module _prroi_pooling...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+/home/user-njf87/anaconda3/envs/pytracking/lib/python3.6/site-packages/torch/nn/functional.py:3063: UserWarning: Default upsampling behavior when mode=bilinear is changed to align_corners=False since 0.4.0. Please specify align_corners=True if the old behavior is desired. See the documentation of nn.Upsample for details.
+  "See the documentation of nn.Upsample for details.".format(mode))
+ninja: no work to do.
+Loading extension module _prroi_pooling...
+FPS: 23.44604032008748
+Tracker: atom default 0 ,  Sequence: Biker
+FPS: 25.029355843838204
+Tracker: atom default 0 ,  Sequence: Bird1
+FPS: 28.195491324068307
+Tracker: atom default 0 ,  Sequence: Bird2
+FPS: 22.55655793380769
+Tracker: atom default 0 ,  Sequence: BlurBody
+FPS: 25.090845641970894
+Tracker: atom default 0 ,  Sequence: BlurCar1
+FPS: 25.486704564451063
+Tracker: atom default 0 ,  Sequence: BlurCar2
+FPS: 25.215197943748006
+Tracker: atom default 0 ,  Sequence: BlurCar3
+FPS: 24.765188595327757
+Tracker: atom default 0 ,  Sequence: BlurCar4
+FPS: 25.387440050229632
+Tracker: atom default 0 ,  Sequence: BlurFace
+FPS: 25.29679933306619
+Tracker: atom default 0 ,  Sequence: BlurOwl
+FPS: 25.974377303802758
+Tracker: atom default 0 ,  Sequence: Board
+FPS: 26.248255031303582
+Tracker: atom default 0 ,  Sequence: Bolt
+FPS: 30.941560436371056
+Tracker: atom default 0 ,  Sequence: Bolt2
+FPS: 27.359891177665595
+Tracker: atom default 0 ,  Sequence: Box
+FPS: 25.984679958102312
+Tracker: atom default 0 ,  Sequence: Boy
+FPS: 26.346923768291955
+Tracker: atom default 0 ,  Sequence: Car1
+FPS: 27.43113998156271
+Tracker: atom default 0 ,  Sequence: Car2
+FPS: 27.233778525846645
+Tracker: atom default 0 ,  Sequence: Car24
+FPS: 28.18135004246748
+Tracker: atom default 0 ,  Sequence: Car4
+FPS: 27.768499747058726
+Tracker: atom default 0 ,  Sequence: CarDark
+FPS: 26.384212703597477
+Tracker: atom default 0 ,  Sequence: CarScale
+FPS: 25.233637598643668
+Tracker: atom default 0 ,  Sequence: ClifBar
+FPS: 28.934475143037524
+Tracker: atom default 0 ,  Sequence: Coke
+FPS: 25.000143154380662
+Tracker: atom default 0 ,  Sequence: Couple
+FPS: 24.44283564962047
+Tracker: atom default 0 ,  Sequence: Coupon
+FPS: 25.388815597870494
+Tracker: atom default 0 ,  Sequence: Crossing
+FPS: 24.092672520360946
+Tracker: atom default 0 ,  Sequence: Crowds
+FPS: 25.143193531728482
+Tracker: atom default 0 ,  Sequence: Dancer
+FPS: 24.653592044795985
+Tracker: atom default 0 ,  Sequence: Dancer2
+FPS: 23.646590170925283
+Tracker: atom default 0 ,  Sequence: David
+FPS: 26.786445224758694
+Tracker: atom default 0 ,  Sequence: David2
+FPS: 28.244254619643648
+Tracker: atom default 0 ,  Sequence: David3
+FPS: 24.112041664813148
+Tracker: atom default 0 ,  Sequence: Deer
+FPS: 19.970810798775876
+Tracker: atom default 0 ,  Sequence: Diving
+FPS: 26.080620065898025
+Tracker: atom default 0 ,  Sequence: Dog
+FPS: 23.864198103315506
+Tracker: atom default 0 ,  Sequence: Dog1
+FPS: 27.74228924101831
+Tracker: atom default 0 ,  Sequence: Doll
+FPS: 26.862903185641546
+Tracker: atom default 0 ,  Sequence: DragonBaby
+FPS: 21.949787044301992
+Tracker: atom default 0 ,  Sequence: Dudek
+FPS: 26.210963101770574
+Tracker: atom default 0 ,  Sequence: FaceOcc1
+FPS: 26.004795915111156
+Tracker: atom default 0 ,  Sequence: FaceOcc2
+FPS: 26.727649456087768
+Tracker: atom default 0 ,  Sequence: Fish
+FPS: 25.716248311882655
+Tracker: atom default 0 ,  Sequence: FleetFace
+FPS: 25.602854809127567
+Tracker: atom default 0 ,  Sequence: Football
+FPS: 24.79980774791391
+Tracker: atom default 0 ,  Sequence: Football1
+FPS: 26.947305252075907
+Tracker: atom default 0 ,  Sequence: Freeman1
+FPS: 26.777586129878735
+Tracker: atom default 0 ,  Sequence: Freeman3
+FPS: 26.569534681943413
+Tracker: atom default 0 ,  Sequence: Freeman4
+FPS: 27.70196815949885
+Tracker: atom default 0 ,  Sequence: Girl
+FPS: 27.521740829057745
+Tracker: atom default 0 ,  Sequence: Girl2
+FPS: 25.902281607820353
+Tracker: atom default 0 ,  Sequence: Gym
+FPS: 26.72492845107321
+Tracker: atom default 0 ,  Sequence: Human2
+FPS: 25.6679977598542
+Tracker: atom default 0 ,  Sequence: Human3
+FPS: 27.06576968539841
+Tracker: atom default 0 ,  Sequence: Human4_2
+FPS: 25.531496582252007
+Tracker: atom default 0 ,  Sequence: Human5
+FPS: 26.09071109261457
+Tracker: atom default 0 ,  Sequence: Human6
+FPS: 25.93055516406461
+Tracker: atom default 0 ,  Sequence: Human7
+FPS: 26.36626639867306
+Tracker: atom default 0 ,  Sequence: Human8
+FPS: 24.843517020119435
+Tracker: atom default 0 ,  Sequence: Human9
+FPS: 26.490435220528997
+Tracker: atom default 0 ,  Sequence: Ironman
+FPS: 24.350168176833723
+Tracker: atom default 0 ,  Sequence: Jogging_1
+FPS: 26.456790413391417
+Tracker: atom default 0 ,  Sequence: Jogging_2
+FPS: 26.43259048726608
+Tracker: atom default 0 ,  Sequence: Jump
+FPS: 24.25184894219956
+Tracker: atom default 0 ,  Sequence: Jumping
+FPS: 25.632300087365014
+Tracker: atom default 0 ,  Sequence: KiteSurf
+FPS: 22.49247164321498
+Tracker: atom default 0 ,  Sequence: Lemming
+FPS: 25.838222984477884
+Tracker: atom default 0 ,  Sequence: Liquor
+FPS: 25.45489673763463
+Tracker: atom default 0 ,  Sequence: Man
+FPS: 25.136757654290918
+Tracker: atom default 0 ,  Sequence: Matrix
+FPS: 22.49891147813518
+Tracker: atom default 0 ,  Sequence: Mhyang
+FPS: 27.266498666930797
+Tracker: atom default 0 ,  Sequence: MotorRolling
+FPS: 22.91644420943105
+Tracker: atom default 0 ,  Sequence: MountainBike
+FPS: 25.386074248232248
+Tracker: atom default 0 ,  Sequence: Panda
+FPS: 28.03584767026158
+Tracker: atom default 0 ,  Sequence: RedTeam
+FPS: 28.420467979481536
+Tracker: atom default 0 ,  Sequence: Rubik
+FPS: 25.443917223918984
+Tracker: atom default 0 ,  Sequence: Shaking
+FPS: 24.716774250191424
+Tracker: atom default 0 ,  Sequence: Singer1
+FPS: 24.70544873192238
+Tracker: atom default 0 ,  Sequence: Singer2
+FPS: 25.667703770255752
+Tracker: atom default 0 ,  Sequence: Skater
+FPS: 24.135734388634123
+Tracker: atom default 0 ,  Sequence: Skater2
+FPS: 25.47909954482552
+Tracker: atom default 0 ,  Sequence: Skating1
+FPS: 23.809413723903166
+Tracker: atom default 0 ,  Sequence: Skating2_1
+FPS: 24.830141899484914
+Tracker: atom default 0 ,  Sequence: Skating2_2
+FPS: 25.0635235987249
+Tracker: atom default 0 ,  Sequence: Skiing
+FPS: 23.47577025907615
+Tracker: atom default 0 ,  Sequence: Soccer
+FPS: 25.09238588379362
+Tracker: atom default 0 ,  Sequence: Subway
+FPS: 24.44426668219015
+Tracker: atom default 0 ,  Sequence: Surfer
+FPS: 26.600668591604524
+Tracker: atom default 0 ,  Sequence: Suv
+FPS: 28.635716078560815
+Tracker: atom default 0 ,  Sequence: Sylvester
+FPS: 27.225485585338138
+Tracker: atom default 0 ,  Sequence: Tiger1
+FPS: 25.04448183501342
+Tracker: atom default 0 ,  Sequence: Tiger2
+FPS: 24.530213112862576
+Tracker: atom default 0 ,  Sequence: Toy
+FPS: 25.891944376037713
+Tracker: atom default 0 ,  Sequence: Trans
+FPS: 23.65127852148659
+Tracker: atom default 0 ,  Sequence: Trellis
+FPS: 27.262428355788916
+Tracker: atom default 0 ,  Sequence: Twinnings
+FPS: 26.492727997794628
+Tracker: atom default 0 ,  Sequence: Vase
+FPS: 27.055292337974247
+Tracker: atom default 0 ,  Sequence: Walking
+FPS: 25.813957846149727
+Tracker: atom default 0 ,  Sequence: Walking2
+FPS: 30.740525004248685
+Tracker: atom default 0 ,  Sequence: Woman
+/home/user-njf87/anaconda3/envs/pytracking/lib/python3.6/site-packages/torch/nn/functional.py:3063: UserWarning: Default upsampling behavior when mode=bilinear is changed to align_corners=False since 0.4.0. Please specify align_corners=True if the old behavior is desired. See the documentation of nn.Upsample for details.
+  "See the documentation of nn.Upsample for details.".format(mode))
+../pytracking/libs/fourier.py:24: UserWarning: The function torch.rfft is deprecated and will be removed in a future PyTorch release. Use the new torch.fft module functions, instead, by importing torch.fft and calling torch.fft.fft or torch.fft.rfft. (Triggered internally at  /opt/conda/conda-bld/pytorch_1607370116979/work/aten/src/ATen/native/SpectralOps.cpp:590.)
+  return rfftshift2(torch.rfft(a, 2))
+../pytracking/libs/fourier.py:31: UserWarning: The function torch.irfft is deprecated and will be removed in a future PyTorch release. Use the new torch.fft module functions, instead, by importing torch.fft and calling torch.fft.ifft or torch.fft.irfft. (Triggered internally at  /opt/conda/conda-bld/pytorch_1607370116979/work/aten/src/ATen/native/SpectralOps.cpp:602.)
+  return torch.irfft(irfftshift2(a), 2, signal_sizes=signal_sizes)
+FPS: 25.628293904270155
+Done

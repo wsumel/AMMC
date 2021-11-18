@@ -1,0 +1,92 @@
+训练(./ltr)
+1：修改 ./ltr/admin/local.py 
+指定数据集位置
+self.lasot_dir = '/data/data-user-njf87/ytbb/LaSOTBenchmark/'
+self.got10k_dir = '/data/data-user-njf87/ytbb/GOT-10K/train'
+self.trackingnet_dir = '/data/data-user-njf87/ytbb/TrackingNet/TRAIN/'
+指定指定模型保存位置(文件夹需要自己预先建立好)
+self.workspace_dir = '/data/data-user-njf87/hl/atom_augone_likecoco'
+每张图片的采样数目
+self.sample_frame_number = 1
+2：设置训练模型种类,修改./ltr/run_training.py
+
+ATOM(ATOM 只能进行单卡训练)
+parser.add_argument('--train_module', type=str,default='bbreg', help='Name of module in the "train_settings/" folder.')
+parser.add_argument('--train_name', type=str,default='atom', help='Name of the train settings file.')
+
+DIMP(修改./ltr/train_settings/dimp/dimp50.py 里的 settings.multi_gpu = True)
+parser.add_argument('--train_module', type=str,default='dimp', help='Name of module in the "train_settings/" folder.')
+parser.add_argument('--train_name', type=str,default='dimp50', help='Name of the train settings file.')
+
+3:运行
+nohup python run_training > log.txt &
+
+
+测试(./pytracking)
+1 修改./pytracking/evaluation/local.py
+settings.got10k_path = '/data/data-user-njf87/ytbb/GOT-10K/'
+settings.lasot_path = '/data/data-user-njf87/ytbb/LaSOTBenchmark/'
+settings.otb_path = '/data/data-user-njf87/ytbb/OTB'
+settings.trackingnet_path = '/data/data-user-njf87/ytbb/TrackingNet/'
+settings.uav_path = '/data/data-user-njf87/ytbb/UAV123/'
+
+#checkpoints 保存的路径
+settings.network_path = '/data/data-user-njf87/hl/atom_augone_likecoco/checkpoints/ltr/bbreg/atom'
+#跟踪结果文件保存路径
+settings.results_path = '/data/data-user-njf87/hl/atom_augone_likecoco/ep50'    # Where to store tracking results
+
+2 ./pytracking/run_tracker.py
+
+ATOM 
+parser.add_argument('--tracker_name', type=str, default='atom',help='Name of tracking method.')
+parser.add_argument('--tracker_param', type=str, default='default',help='Name of parameter file.')
+
+DIMP
+parser.add_argument('--tracker_name', type=str, default='dimp',help='Name of tracking method.')
+parser.add_argument('--tracker_param', type=str, default='dimp50',help='Name of parameter file.')
+
+
+测试otb
+parser.add_argument('--runid', type=int, default=0, help='The run id.')
+parser.add_argument('--dataset_name', type=str, default='otb', help='Name of dataset (otb, nfs, uav, tpl, vot, tn, gott, gotv, lasot).')
+测试uav
+parser.add_argument('--runid', type=int, default=1, help='The run id.')
+parser.add_argument('--dataset_name', type=str, default='uav', help='Name of dataset (otb, nfs, uav, tpl, vot, tn, gott, gotv, lasot).')
+测试trackingnet
+parser.add_argument('--runid', type=int, default=2, help='The run id.')
+parser.add_argument('--dataset_name', type=str, default='trackingnet', help='Name of dataset (otb, nfs, uav, tpl, vot, tn, gott, gotv, lasot).')
+测试lasot
+parser.add_argument('--runid', type=int, default=3, help='The run id.')
+parser.add_argument('--dataset_name', type=str, default='lasot', help='Name of dataset (otb, nfs, uav, tpl, vot, tn, gott, gotv, lasot).')
+测试got10k_test
+parser.add_argument('--runid', type=int, default=4, help='The run id.')
+parser.add_argument('--dataset_name', type=str, default='got10k_test', help='Name of dataset (otb, nfs, uav, tpl, vot, tn, gott, gotv, lasot).')
+
+
+数据集下载
+数据集下载链接
+训练数据集：
+
+COCO： http://images.cocodataset.org/zips/train2017.zip
+
+        http://images.cocodataset.org/zips/val2017.zip
+
+        http://images.cocodataset.org/annotations/annotations_trainval2017.zip
+
+LaSOT： https://drive.google.com/file/d/1O2DLxPP8M4Pn4-XCttCJUW3A29tDIeNa/view
+
+GOT10k： http://got-10k.aitestunion.com/downloads 
+
+TrackingNet： https://drive.google.com/drive/u/0/folders/1gJOR-r-jPFFFCzKKlMOW80WFtuaMiaf6 (只需要下载train-split 0-4,以及test)
+
+测试数据集下载链接：
+
+LaSOT： https://drive.google.com/file/d/1O2DLxPP8M4Pn4-XCttCJUW3A29tDIeNa/view
+
+GOT10k： http://got-10k.aitestunion.com/downloads
+
+TrackingNet： https://drive.google.com/drive/u/0/folders/1gJOR-r-jPFFFCzKKlMOW80WFtuaMiaf6
+
+OTB100： http://cvlab.hanyang.ac.kr/tracker_benchmark/
+
+UAV123： https://cemse.kaust.edu.sa/ivul/uav123
